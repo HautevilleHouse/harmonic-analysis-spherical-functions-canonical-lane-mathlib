@@ -1,0 +1,14 @@
+import canonicalLaneMathlib.AdmissibleClass
+import SphericalHarmonicBasis
+import SphericalTransform
+import SphericalFunction
+import AdmissibleClass
+import BridgeLemmas
+import GateLemmas
+import FinalTheorem
+
+namespace HautevilleHouse
+namespace HarmonicAnalysisSphericalFunctionsCanonicalLaneLean
+-- Root module, all imports assembled
+end HarmonicAnalysisSphericalFunctionsCanonicalLaneLean
+end HautevilleHouse

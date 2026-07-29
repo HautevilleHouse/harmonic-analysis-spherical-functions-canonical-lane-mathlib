@@ -1,0 +1,19 @@
+import canonicalLaneMathlib.AdmissibleClass
+import HarmonicAnalysisSphericalFunctionsCanonicalLaneLean.SphericalHarmonicsBasic
+import HarmonicAnalysisSphericalFunctionsCanonicalLaneLean.FunkTransform
+import HarmonicAnalysisSphericalFunctionsCanonicalLaneLean.SphericalConvolution
+import HarmonicAnalysisSphericalFunctionsCanonicalLaneLean.SphericalHarmonicExpansion
+import HarmonicAnalysisSphericalFunctionsCanonicalLaneLean.AdditionTheorem
+
+namespace HautevilleHouse
+namespace HarmonicAnalysisSphericalFunctionsCanonicalLaneLean
+
+def ConstrainedSphericalFunctionClosure (A : AdmissibleClass) : Prop :=
+  bridgeClosed A ∧ gateClosed A
+
+theorem constrained_spherical_function_endgame (A : AdmissibleClass) :
+    ConstrainedSphericalFunctionClosure A := by
+  exact And.intro (bridge_from_admissible_class A) (gate_from_admissible_class A)
+
+end HarmonicAnalysisSphericalFunctionsCanonicalLaneLean
+end HautevilleHouse
